@@ -16,11 +16,11 @@ function createTodoItem(content, onChecked, onDelete) {
   const acceptButton = el.querySelector(`.${acceptButtonClass}`)
   const deleteButton = el.querySelector(`.${deleteButtonClass}`)
 
-  acceptButton.addEventListener('click', (event) => {
+  acceptButton.addEventListener('click', () => {
     onChecked(el)
   })
 
-  deleteButton.addEventListener('click', (event) => {
+  deleteButton.addEventListener('click', () => {
     onDelete(el)
   })
 
